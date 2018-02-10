@@ -1,0 +1,108 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building merch-bff-acceptance-test 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ merch-bff-acceptance-test ---
+[INFO] Deleting /Users/ramgupta/IdeaProjects/acceptancetest/target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ merch-bff-acceptance-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/ramgupta/IdeaProjects/acceptancetest/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ merch-bff-acceptance-test ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- cucumber-jvm-parallel-plugin:4.2.0:generateRunners (generateRunners) @ merch-bff-acceptance-test ---
+[INFO] Adding /Users/ramgupta/IdeaProjects/acceptancetest/target/generated-test-sources/cucumber to test-compile source root
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ merch-bff-acceptance-test ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.2:testCompile (default-testCompile) @ merch-bff-acceptance-test ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /Users/ramgupta/IdeaProjects/acceptancetest/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ merch-bff-acceptance-test ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ merch-bff-acceptance-test ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: /Users/ramgupta/IdeaProjects/acceptancetest/target/merch-bff-acceptance-test-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.20.1:integration-test (default) @ merch-bff-acceptance-test ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[main] INFO net.serenitybdd.core.Serenity - 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at http://www.serenity-bdd.info                                  
+ Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
+ Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
+ Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
+ Learn Serenity BDD online at http://serenity-dojo.com                               
+-------------------------------------------------------------------------------------
+
+[main] INFO net.serenitybdd.core.Serenity - Test Suite Started: Checking Eligibility
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Checking CrossSell Eligibility within Retention window
+-------------------------------------------------------------------(checking-eligibility;checking-crosssell-eligibility-within-retention-window)
+[pool-1-thread-1] INFO net.serenitybdd.core.Serenity - 
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Checking CrossSell Eligibility within Retention window
+----------------------------------------------------------------------------
+
+1 Scenarios (1 passed)
+4 Steps (4 passed)
+0m0.638s
+
+[INFO] Running Checking Eligibility
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.148 s - in Checking Eligibility
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- serenity-maven-plugin:1.8.21:aggregate (serenity-reports) @ merch-bff-acceptance-test ---
+[INFO] current_project.base.dir: /Users/ramgupta/IdeaProjects/acceptancetest
+[INFO] Generating test results for 1 tests
+[INFO] 2 requirements loaded after 125 ms
+[INFO] 2 related requirements found after 125 ms
+[INFO] Generating test outcome reports: false
+[INFO] Starting generating reports: 147 ms
+[INFO] Configured report threads: 40
+[INFO] Test results for 1 tests generated in 686 ms
+[INFO] 
+[INFO] --- maven-failsafe-plugin:2.20.1:verify (default) @ merch-bff-acceptance-test ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.776 s
+[INFO] Finished at: 2018-02-09T22:28:25-06:00
+[INFO] Final Memory: 50M/595M
+[INFO] ------------------------------------------------------------------------
