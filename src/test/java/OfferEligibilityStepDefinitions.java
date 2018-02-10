@@ -24,12 +24,12 @@ public class OfferEligibilityStepDefinitions {
     public void cardholderShouldBeAbleToSeeCreditLimitIncreaseAsEligibleOfferTypes() throws Throwable {
 
         //Intentionally Failed The Assertion
-        Assert.assertFalse(true);
+        Assert.assertTrue("Asserting True but got false", true);
     }
 
     @Then("^CardHolder should be able to see following link to apply for offer$")
     public void cardholderShouldBeAbleToSeeFollowingLinkToApplyForOffer(List<Map<String, String>> expectData) throws Throwable {
-        Assert.assertTrue(true);
+        Assert.assertTrue("Failing Second Step Assertion",false);
 
     }
 }
