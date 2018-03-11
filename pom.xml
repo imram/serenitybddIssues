@@ -13,8 +13,10 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <serenity.version>1.9.0-rc.1</serenity.version>
-        <serenity.cucumber.version>1.6.10</serenity.cucumber.version>
+        <serenity.version>1.9.3</serenity.version>
+        <serenity.cucumber.version>1.9.3</serenity.cucumber.version>
+        <serenity.maven.version>1.8.1</serenity.maven.version>
+
         <webdriver.driver>firefox</webdriver.driver>
     </properties>
 
@@ -79,7 +81,7 @@
                         <webdriver.base.url>${webdriver.driver}</webdriver.base.url>
                     </systemPropertyVariables>
                     <parallel>classes</parallel>
-                    <threadCount>8</threadCount>
+                    <threadCount>10</threadCount>
                     <perCoreThreadCount>true</perCoreThreadCount>
                 </configuration>
                 <executions>
@@ -103,7 +105,7 @@
             <plugin>
                 <groupId>net.serenity-bdd.maven.plugins</groupId>
                 <artifactId>serenity-maven-plugin</artifactId>
-                <version>${serenity.version}</version>
+                <version>${serenity.maven.version}</version>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>
@@ -138,7 +140,9 @@
                             <glue>
                                 <package>planner.cucumber</package>
                             </glue>
-                            <parallelScheme>FEATURE</parallelScheme>
+                            <useTestNG>false</useTestNG>
+                            <namingScheme>feature-title</namingScheme>
+                            <parallelScheme>SCENARIO</parallelScheme>
                             <customVmTemplate>src/test/resources/cucumber-serenity-runner.vm</customVmTemplate>
                         </configuration>
                     </execution>
